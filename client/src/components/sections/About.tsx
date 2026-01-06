@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import headshot from "@assets/generated_images/professional_portrait_of_sinddu_shastry,_ceo..png";
 
 export function About() {
   return (
@@ -13,26 +12,25 @@ export function About() {
             viewport={{ once: true }}
             className="relative order-2 md:order-1"
           >
-            <div className="relative aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-2xl shadow-xl">
-              <img
-                src={headshot}
-                alt="Sinddu Shastry"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              <div className="absolute bottom-0 left-0 w-full p-6 text-white">
-                <h3 className="text-xl font-bold font-serif">Sinddu Shastry</h3>
-                <p className="text-sm text-white/80">Founder & CEO</p>
+            <div className="space-y-8">
+              <div className="p-8 bg-card rounded-2xl shadow-sm border border-border relative overflow-hidden group">
+                <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
+                <h3 className="text-2xl font-bold font-serif mb-2">Sinddu Shastry</h3>
+                <p className="text-primary font-medium mb-4">Founder & CEO</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Leading the vision to democratize elite leadership coaching through 
+                  the power of AI and human expertise.
+                </p>
               </div>
-            </div>
 
-            <div className="mt-8 p-6 bg-muted/30 rounded-xl border border-border">
-              <h3 className="text-lg font-bold font-serif mb-2">James Shastry</h3>
-              <p className="text-sm text-primary font-medium mb-4">Advisor & Coach</p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                James brings decades of experience in organizational psychology and executive performance, 
-                supporting the leadership growth of founders across 80+ global ventures.
-              </p>
+              <div className="p-8 bg-muted/30 rounded-2xl border border-border relative overflow-hidden">
+                <h3 className="text-xl font-bold font-serif mb-2">James Shastry</h3>
+                <p className="text-primary/80 font-medium mb-4">Advisor & Coach</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  James brings decades of experience in organizational psychology and executive performance, 
+                  supporting the leadership growth of founders across 80+ global ventures.
+                </p>
+              </div>
             </div>
 
             {/* Decorative elements */}
