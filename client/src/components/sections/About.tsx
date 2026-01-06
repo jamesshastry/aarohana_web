@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import headshot from "@assets/James_Photo_1763839723997.jpg";
+import headshot from "@assets/generated_images/professional_portrait_of_sinddu_shastry,_ceo..png";
 
 export function About() {
   return (
@@ -16,14 +16,23 @@ export function About() {
             <div className="relative aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-2xl shadow-xl">
               <img
                 src={headshot}
-                alt="James Shastry"
+                alt="Sinddu Shastry"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 w-full p-6 text-white">
-                <h3 className="text-xl font-bold font-serif">James Shastry</h3>
-                <p className="text-sm text-white/80">Founder & Lead Coach</p>
+                <h3 className="text-xl font-bold font-serif">Sinddu Shastry</h3>
+                <p className="text-sm text-white/80">Founder & CEO</p>
               </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-muted/30 rounded-xl border border-border">
+              <h3 className="text-lg font-bold font-serif mb-2">James Shastry</h3>
+              <p className="text-sm text-primary font-medium mb-4">Advisor & Coach</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                James brings decades of experience in organizational psychology and executive performance, 
+                supporting the leadership growth of founders across 80+ global ventures.
+              </p>
             </div>
 
             {/* Decorative elements */}
@@ -45,7 +54,7 @@ export function About() {
                 Leadership in ambiguity is the hardest skill to master.
               </p>
               <p>
-                I founded Aarohana to bridge the gap between the lonely journey of a founder
+                We founded Aarohana to bridge the gap between the lonely journey of a founder
                 and the expensive, inaccessible world of executive coaching.
               </p>
 
